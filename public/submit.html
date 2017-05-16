@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="The Peaceful Streets Project is a grassroots organization dedicated to educating the public, raising awareness about police brutality and ending institutionalized violence.">
+	<link href="http://fonts.googleapis.com/css?family=Oxygen%7CRoboto+Condensed%7CSource+Sans+Pro:700" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="javascripts/jquery.horizontalNav.js"></script>
+	<script src="javascripts/jquery-canvas-sparkles.js"></script>
+	<script src="javascripts/script.js"></script>
+  </head>
+  <body>
+    
+  <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+  
+    <div id="container">
+	<div id="banner"><img src="images/peacefulstreets.jpg" alt="Peaceful Streets Banner"></div>
+	
+	  <header id="mobile-header">
+	  	<div id="navMobile"><label for="show-menu" class="show-menu">Menu</label>
+		<input name="menu" id="show-menu" type="checkbox">
+		  <ul id="mobiMenu">
+		    <!--<li><a href="index.html">Home</a></li>-->
+			<li><a href="index.html" class="menulink">Home</a></li>
+		    <li><a href="about.html" class="menulink">About</a></li>
+		    <li><a href="flex.html" class="menulink">Flex</a></li>
+		    <li><a href="submit.html" class="menulink">Submit</a></li>
+		    <li><a href="cloudstorage.html" class="menulink">Cloud Storage</a></li>
+		    <li><a href="contact.html" class="menulink">Contact Us</a></li>
+		 </ul></div>
+		 
+	  </header>
+	
+	  <header id="topheader">
+	   <nav id="topnav">
+	     <ul>
+		    <!--<li><a href="index.html">Home</a></li>-->
+			<li><a href="index.html" class="menulink">Home</a></li>
+		    <li><a href="about.html" class="menulink">About</a></li>
+		    <li><a href="flex.html" class="menulink">Flex</a></li>
+		    <li><a href="submit.html" class="menulink">Submit</a></li>
+		    <li><a href="cloudstorage.html" class="menulink">Cloud Storage</a></li>
+		    <li><a href="contact.html" class="menulink">Contact Us</a></li>
+		 </ul>
+
+		 <script>
+		  $('#topnav').horizontalNav();
+		 </script>
+		 
+	   </nav>
+	   	<div id="pageheader">Submit a story!</div>
+	   </header>
+		<main>
+		<article id="mainarticle">
+		<!-- Content source: http://www.copblock.org/submit/ -->
+		<h2>Use the Form Below To:</h2>
+		<h3 id="insth3">1.  Recount your own police interaction</h3><p class="parainst"> - give a complete overview of what happened and include (if possible) related pictures/video, name and badge number, agency, contact information for person and agency. You're encouraged to first review the post
+		<a href="http://www.copblock.org/29382/so-youve-been-wronged-by-a-police-employee/">"So You've Been Wronged by a Police Employee?"</a></p><br><br>
+		<h3 class="insth3">2.  Recount a police interaction you witnessed</h3><p class="parainst"> - give a complete overview of what happened and include (if possible) related pictures/video, name and badge number, agency, contact information for person and agency.</p><br><br>
+		<h3 class="insth3">3.  Share your own writing</h3><p class="parainst"> - something you think it'd fit on copblock.org, original piece or cross-posted, be sure to include links to your blog/site and contact information on how others can find you.</p><br><br>
+		<h3 class="insth3">4.  Share relevant content posted elsewhere</h3><p class="parainst"> - please include the related URL and one or two paragraphs of your own thoughts.</p><br><br>
+		
+		</article>
+		<article>
+		 <header id="article-header">
+		 </header>
+		 
+		 <form action="#" method="post">
+			<fieldset>
+				<legend>Submit a Post to Peaceful Streets Lewis County</legend>
+				<div>
+					<label for="posttitle">Post Title:</label>
+					<input type="text" id="posttitle" name="posttitle" required>
+					<span class="help">Submission Title</span><br>
+				</div>
+				<div>
+					<label for="dateincident">Date of Incident:</label><br>
+					<input type="datetime" id="dateincident" name="dateincident" required>
+					<span class="help">Format: ddmmyyyy</span><br>
+					<p>When did the police interaction occur? This information is objective, and thus will help those who may call or who submit FOIA requests about the incident.</p>
+				</div>
+				<div>
+					<label for="employee">Police Employee(s) Involved</label><br>
+					<input type="text" id="employee" name="employee"><br>
+					<p>Include the name - and if known, the badge numbers - of the person(s) involved. Individuals are responsible for their actions. The more we can focus attention on the aggressors themselves, and not an entire police outfit, the better.</p>
+				</div>
+				<div>
+					<label for="contact">Police Contact Information</label><br>
+					<input type="text" id="contact" name="contact"><br>
+					<p>What is the phone number, email and other contact information for the police outfit where the police employee(s) with whom you interacted work? Providing this information it will make it much more likely that others will call or comment to voice their thoughts, and make clear that others are paying attention. The court of public opinion is powerful.</p>
+				</div>
+				<div>
+					<label for="website">Video Link</label>
+					<input type="url" id="website" name="website" value="http://youtube.com">
+					<p>If there's a video of the incident provide the URL. If your post is deemed relevant for copblock.org your video will be embedded in the post.</p>
+				</div>
+					<!-- Need basic filetype validation here, prior to server validation. -->
+					<label for="uploadPhoto">Upload Picture</label>
+					<input type="file" name="uploadPhoto" id="uploadPhoto" accept="image/*"><br>
+					<p>If you have a picture related to the incident please upload it here. Having such visualizations will result in more eyes on your post. If you don't have a picture of the incident you can always include a picture taken from the website of the police outfit where the aggressor(s) are employed.</p>
+				<div>
+					<label for="Overview">Incident Overview</label><br>
+					<textarea id="Overview" cols="100" rows="16" name="Overview"></textarea>
+				</div>
+				
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+					<span class="help">Format: Firstname Lastname</span>
+				</div>
+				
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required aria-required="true"><br>
+					<span id="u_email" class="help">user@server.com</span>
+				</div>
+<!--				** This will be replaced with javascript & server authentication **
+					<div>
+					<label for="email">Confirm Email:</label>
+					<input type="email" id="email" name="cemail" required aria-required="true"><br>
+					<span id="cemail" class="help">user@server.com</span>
+					</div> -->
+				<div>
+					<p>Can we Publicly Attribute this Post to You?</p>
+					<label for="yes">Yes</label>
+					<input type="radio" name="choice" id="yes" value="yes"><br>
+					<label for="no">No</label>
+					<input type="radio" name="choice" id="no" value="no">
+				</div>
+				<div class="submit">
+					<input type="submit" value="Submit">
+				</div>
+			</fieldset>
+		</form>
+		</article>  
+	</main>
+		
+	  <div id="clear-float"></div>
+	  <footer><a href="submit.html" class="menulink"><h6>Peaceful Streets - Submit</h6></a></footer>
+	</div>
+	<div class="fb-like" data-href="https://www.facebook.com/peacefulstreets.lewiscounty" data-width="10" data-height="10" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>	
+</body>
+
+</html>
